@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My AI Voice Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🤖 AI Voice Assistant</h1>
+
+    <!-- Shows what YOU said -->
+    <div class="box">
+      <p><strong>You said:</strong></p>
+      <p id="user-text">Press the button and speak...</p>
+    </div>
+
+    <!-- Shows what AI replied -->
+    <div class="box ai-box">
+      <p><strong>AI replied:</strong></p>
+      <p id="ai-text">Waiting for your question...</p>
+    </div>
+
+    <!-- The big mic button -->
+    <button id="mic-btn" onclick="startListening()">
+      🎤 Hold to Speak
+    </button>
+
+    <!-- Status message -->
+    <p id="status">Ready</p>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
